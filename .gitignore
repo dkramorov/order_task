@@ -1,0 +1,17 @@
+*.pyc
+*.db
+*.log
+*.pid
+.idea
+*.sock
+*.prof
+*.cprof
+venv/
+.env
+app_tag
+*.rdb
+pyproject.toml
+poetry.lock
+.python-version
+media
+static

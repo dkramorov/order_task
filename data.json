@@ -1,0 +1,243 @@
+[{
+        "model": "catalogue.product",
+        "pk": 1,
+        "fields": {
+            "name": "Product 1",
+            "code": "p_0001",
+            "price": "56.78"
+        }
+    }, {
+        "model": "catalogue.product",
+        "pk": 2,
+        "fields": {
+            "name": "Product 2",
+            "code": "p_0002",
+            "price": "12.32"
+        }
+    }, {
+        "model": "catalogue.product",
+        "pk": 3,
+        "fields": {
+            "name": "Product 3",
+            "code": "p_0003",
+            "price": "156.61"
+        }
+    }, {
+        "model": "catalogue.product",
+        "pk": 4,
+        "fields": {
+            "name": "Product 4",
+            "code": "p_0004",
+            "price": "1.42"
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$Sl4Lg6MTG7bGiGDviSpJTz$Llm/fGw6n1OvoqNCFKTo0x4C3GEFqWZyUnc9qDk62Fc=",
+            "last_login": "2022-05-30T08:55:28.571Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-05-30T08:55:16.831Z",
+            "organization": null,
+            "role": "shop_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 2,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "shop_staff_1",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:13:30Z",
+            "organization": null,
+            "role": "shop_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 3,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "shop_staff_2",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:15:34Z",
+            "organization": null,
+            "role": "shop_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 4,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_1_chief",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:15:52Z",
+            "organization": 1,
+            "role": "organization_chief",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 5,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_2_chief",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:16:27Z",
+            "organization": 2,
+            "role": "organization_chief",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 6,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_1_staff_1",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:18:09Z",
+            "organization": 1,
+            "role": "organization_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 7,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_1_staff_2",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:18:38Z",
+            "organization": 1,
+            "role": "organization_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 8,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_2_staff_1",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:19:25Z",
+            "organization": 2,
+            "role": "organization_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.user",
+        "pk": 9,
+        "fields": {
+            "password": "unsafepass",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "organization_2_staff_2",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-30T09:19:51Z",
+            "organization": 2,
+            "role": "organization_staff",
+            "groups": [],
+            "user_permissions": []
+        }
+    }, {
+        "model": "customer.organization",
+        "pk": 1,
+        "fields": {
+            "name": "Организация 1",
+            "address": "Адрес организации 1",
+            "point": "SRID=4326;POINT (40.16601562499999 58.35563036280963)"
+        }
+    }, {
+        "model": "customer.organization",
+        "pk": 2,
+        "fields": {
+            "name": "Организация 2",
+            "address": "Адрес организации 2",
+            "point": "SRID=4326;POINT (46.23046874999998 54.41892996865823)"
+        }
+    }, {
+        "model": "order.order",
+        "pk": 1,
+        "fields": {
+            "state": "creating",
+            "dt_created": "2022-05-30T09:21:12.477Z",
+            "dt_updated": "2022-05-30T09:21:12.477Z",
+            "author_create": 8,
+            "author_update": null
+        }
+    }, {
+        "model": "order.orderitem",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "product": 1,
+            "amount": 2,
+            "dt_created": "2022-05-30T09:21:12.478Z",
+            "dt_updated": "2022-05-30T09:21:12.478Z",
+            "author_create": 8,
+            "author_update": null
+        }
+    }
+]
