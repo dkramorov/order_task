@@ -31,6 +31,7 @@ router.register(r'api/order_item', order.views.OrderItemViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('rest_framework.urls')),
+    path('ws/', include('channels_app.urls')),
 ] + router.urls
 
 
