@@ -1,4 +1,5 @@
 from django.contrib import admin
+from base.admin import BaseAdmin
 from . import models
 
 
@@ -8,5 +9,5 @@ class UserAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.Organization)
-class OrganizationAdmin(admin.ModelAdmin):
-    ...
+class OrganizationAdmin(BaseAdmin):
+    pass

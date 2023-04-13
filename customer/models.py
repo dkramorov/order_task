@@ -1,6 +1,7 @@
-
+from django.conf import settings
 from django.contrib.gis.db import models
 from django.contrib.auth.models import AbstractUser
+from base.models import BaseModel
 
 
 class User(AbstractUser):
@@ -17,7 +18,7 @@ class User(AbstractUser):
     role = models.CharField('Роль', max_length=255, choices=Role.choices, default=Role.SHOP_STAFF)
 
 
-class Organization(models.Model):
+class Organization(BaseModel):
     name = models.CharField('Название', max_length=255)
     address = models.TextField('Адрес')
     point = models.PointField('Точка', blank=True, null=True, db_index=True)
