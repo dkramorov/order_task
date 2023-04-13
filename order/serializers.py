@@ -16,7 +16,7 @@ class OrderSerializer(BaseSerializer):
 
     class Meta:
         model = models.Order
-        fields = ['dt_created', 'dt_updated', 'author_create', 'author_update', 'items']
+        fields = ['dt_created', 'dt_updated', 'author_create', 'author_update', 'items', 'total_positions', 'positions_codes']
 
     def move_positions2new_order(self, items, order):
         prev_order = None

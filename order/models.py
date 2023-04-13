@@ -11,6 +11,19 @@ class Order(BaseModel):
     state = models.CharField('Состояние заказа', max_length=50, choices=State.choices, default=State.CREATING)
     history = HistoryRecords()
 
+    @property
+    def total_positions(self):
+        if self.id:
+            return self.items.all().aggregate(models.Sum('amount'))['amount__sum'] or 0
+        return 0
+
+    @property
+    def positions_codes(self):
+        if self.id:
+            product_codes = list(self.items.all().values_list('product__code', flat=True))
+            return ', '.join(product_codes) if product_codes else ''
+        return ''
+
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
